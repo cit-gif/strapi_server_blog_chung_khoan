@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ env }) => ({
   //...
   settings: {
     cors: {
@@ -13,4 +13,4 @@ module.exports = {
       br: false,
     },
   },
-};
+});
