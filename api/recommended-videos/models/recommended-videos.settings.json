@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommended_videos",
+  "info": {
+    "name": "RecommendedVideos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}

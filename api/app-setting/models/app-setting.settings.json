@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "app_settings",
+  "info": {
+    "name": "AppSetting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appName": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "seoKeywords": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "string"
+    },
+    "seoImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seoType": {
+      "type": "string"
+    },
+    "seoFBAppId": {
+      "type": "string"
+    },
+    "seoGoogleSiteKey": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "adminName": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "numberPhoneComponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "number-phone.number-phone"
+    },
+    "plugins": {
+      "type": "component",
+      "repeatable": false,
+      "component": "plugins.plugins"
+    }
+  }
+}

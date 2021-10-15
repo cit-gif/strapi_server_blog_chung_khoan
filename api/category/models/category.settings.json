@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1,
+      "maxLength": 24
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "minLength": 4,
+      "unique": true,
+      "maxLength": 30
+    },
+    "featured_category": {
+      "via": "category",
+      "model": "featured-category"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "category"
+    },
+    "seoDescription": {
+      "type": "string",
+      "default": "Mô tả",
+      "maxLength": 156,
+      "minLength": 1
+    }
+  }
+}

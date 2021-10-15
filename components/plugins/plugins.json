@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_plugins_plugins",
+  "info": {
+    "name": "plugins",
+    "icon": "dice-d6",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "scriptsHeaderFB": {
+      "type": "richtext"
+    },
+    "adsAsside": {
+      "type": "richtext"
+    },
+    "scriptsHeaderGoogle": {
+      "type": "richtext"
+    },
+    "commentsFB": {
+      "type": "richtext"
+    }
+  }
+}

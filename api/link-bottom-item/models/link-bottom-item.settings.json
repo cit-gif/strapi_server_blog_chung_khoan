@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "link_bottom_items",
+  "info": {
+    "name": "LinkBottomItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "unique": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "link_bottom_label": {
+      "via": "link_bottom_items",
+      "model": "link-bottom-label"
+    },
+    "seoDescription": {
+      "type": "string",
+      "required": true,
+      "default": "Mô tả",
+      "maxLength": 160,
+      "minLength": 1
+    }
+  }
+}

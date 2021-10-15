@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_categories",
+  "info": {
+    "name": "FeaturedCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "via": "featured_category",
+      "model": "category"
+    }
+  }
+}
