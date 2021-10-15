@@ -4,7 +4,13 @@ module.exports = {
     cors: {
       enabled: true,
       // headers: '*',
-      origin: process.env.ORIGIN.split(";") || "*",
+      origin: process.env?.ORIGIN?.split(";") || env("ORIGIN") || "*",
+    },
+  },
+  gzip: {
+    enabled: true,
+    options: {
+      br: false,
     },
   },
 };
