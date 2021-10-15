@@ -4,7 +4,8 @@ module.exports = ({ env }) => ({
     cors: {
       enabled: true,
       // headers: '*',
-      origin: process.env?.ORIGIN?.split(";") || env("ORIGIN") || "*",
+      origin:
+        process.env?.ORIGIN?.split(";") || env("ORIGIN")?.split(";") || "*",
     },
   },
   gzip: {
