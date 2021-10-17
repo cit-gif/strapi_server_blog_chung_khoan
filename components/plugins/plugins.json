@@ -8,16 +8,16 @@
   "options": {},
   "attributes": {
     "scriptsHeaderFB": {
-      "type": "richtext"
-    },
-    "adsAsside": {
-      "type": "richtext"
-    },
-    "scriptsHeaderGoogle": {
-      "type": "richtext"
+      "type": "text"
     },
     "commentsFB": {
-      "type": "richtext"
+      "type": "text"
+    },
+    "scriptsHeaderGoogle": {
+      "type": "text"
+    },
+    "adsAsside": {
+      "type": "text"
     }
   }
 }
