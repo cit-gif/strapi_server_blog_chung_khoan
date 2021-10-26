@@ -61,6 +61,16 @@
       "type": "component",
       "repeatable": false,
       "component": "plugins.plugins"
+    },
+    "avatarAdmin": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
